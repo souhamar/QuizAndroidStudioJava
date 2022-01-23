@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwall"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="You've completed the quiz"
+        android:textColor=" #B026FF"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/correctA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_below="@+id/layout1"
+        android:text="Correct Answer : 0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#B026FF"
+        />
+
+
+    <TextView
+        android:id="@+id/incorrectA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        android:layout_below="@+id/correctA"
+        android:text="Wrong Answer : 0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#B026FF"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startAgain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/incorrectA"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_style"
+        android:text="Start Again" />
+</RelativeLayout>
